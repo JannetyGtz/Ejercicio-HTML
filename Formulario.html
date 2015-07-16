@@ -6,34 +6,54 @@
 <body>
 	<h1>Travel Reservation Form</h1>
 	<h2>*denotes mandatory</h2>
-		<table>
+	<form action="post action ">
+		
 			<label for="nombre">Full name*: </label>
 			<br>
-			<input type="text" name="nombre" placeholder = "FirstName LastName"id="nombre">
+				<input type="text" name="nombre" placeholder = "FirstName LastName"id="nombre">
 			<br/> 
-			<label for="email">Email address*: </label>
+				<label for="email">Email address*: </label>
 			<br>
-			<input type="text" name="mail" placeholder = "EMAIL_ADDRESS" id="email">
+				<input type="text" name="mail" placeholder = "EMAIL_ADDRESS" id="email">
 			<br/>
-			<label for="Package">Select Tour Package*: </label>
+				<label for="Package">Select Tour Package*: </label>
 			<br>
 			<select>
-  			<option value="volvo">Goa</option>
-  			<option value="saab">Moab</option>
- 		 	<option value="mercedes">Mercedes</option>
-  			<option value="audi">Toto</option>
-			</select>
+  				<option value="volvo">Goa</option>
+  				<option value="saab">Moab</option>
+ 		 		<option value="mercedes">Mercedes</option>
+  				<option value="audi">Toto</option>
+				</select>
 			<br>
-			<label for="date_arrive">Arrive date*: </label>
+				<label for="date_arrive">Arrive date*: </label>
 			<br>
-			<input type="text" name="arrive_name" placeholder = "m/d/y" id="date_arrive">
+				<input type="text" name="arrive_name" placeholder = "m/d/y" id="date_arrive">
 			<br>
-			<label for="number_person">Number of persons*: </label>
+				<label for="number_person">Number of persons*: </label>
 			<br>
-			<input type="text" name="number_person" placeholder = "UNKNOWN_TYPE" id="number_person">
-			<br/>
-			<label for="deseo">What would you want to avail?*: </label>
-		</table>
+				<input type="text" name="number_person" placeholder = "UNKNOWN_TYPE" id="number_person">
+			<br>
+				<label for="deseo">What would you want to avail?*: </label>
+			<br>
+				Boarding<input type="checkbox" name="transporte" value="1"> 
+			<br>
+				Foodigng<input type="checkbox" name="transporte" value="2" checked="">
+			<br>
+				Sight seeing<input type="checkbox" name="transporte" value="3">
+			<br>
+				<label for="coupon">Discount Coupon code: </label>
+			<br>
+				<input type="text" name="coupon" placeholder = "UNKNOWN_TYPE" id="coupon">
+			<br>
+				<label for="condition">Terms and conditions*</label>
+			<br>
+				<input type="radio" name="transporte" value="1" checked="">I agree 
+				<input type="radio" name="transporte" value="2">I disagree
+			<br>
+				<button type="submit">Complete reservation</button>
+
+		
+		</form>
 
 </body>
 </html>
